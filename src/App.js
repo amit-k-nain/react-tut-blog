@@ -1,26 +1,33 @@
-import React,{Component} from "react";
+// import React,{Component,useState} from "react";
 import logo from './logo.svg';
 import './App.css';
-import Test from './Test';
-import User from './User';
+// import Test from './Test';
+// import User from './User';
+import DemoClassComponent from './DemoClassComponent';
+import StudentProp from './StudentProp';
+
+
 
 function App() {
-
-  function TestDemoInside() {
-    return (
-      <div className="Test">
-        <h1> Test Demo Inside Done</h1>
-      </div>
-    );
-  }
+  
+  // function TestDemoInside() {
+  //   return (
+  //     <div className="Test">
+  //       <h1> Test Demo Inside Done</h1>
+  //     </div>
+  //   );
+  // }
 
   return (
     <div className="App">
-      <User />
+      <StudentProp />
+      <DemoClassComponent />
+      {/* <User />
       <Test />
       <TestDemo />
-      <TestDemoInside />
+      <TestDemoInside /> */}
       <header className="App-header">
+        
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -30,32 +37,32 @@ function App() {
           href="void()"
           rel="noopener noreferrer"
         >
-          <UserData />
+          {/* <UserData /> */}
           Learn React With Amit
-          {TestDemoInside()}
+          {/* {TestDemoInside()} */}
         </a>
       </header>
     </div>
   );
 }
 
-function TestDemo() {
-  return (
-    <div className="Test">
-      <h1> TestDemo Done</h1>
-    </div>
-  );
-}
+// function TestDemo() {
+//   return (
+//     <div className="Test">
+//       <h1> TestDemo Done</h1>
+//     </div>
+//   );
+// }
 
-class UserData extends Component
-{
-    render(){
-        return(
-            <div className="Test">
-                <h1>UserData class Done</h1>
-            </div>
-        );
-    }
-}
+// class UserData extends Component
+// {
+//     render(){
+//         return(
+//             <div className="Test">
+//                 <h1>UserData class Done</h1>
+//             </div>
+//         );
+//     }
+// }
 
 export default App;
