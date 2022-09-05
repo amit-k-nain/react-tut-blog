@@ -4,9 +4,10 @@ import './App.css';
 // import Test from './Test';
 // import User from './User';
 import DemoClassComponent from './DemoClassComponent';
+import StudentClassComponent from './StudentClassComponent';
 import StudentProp from './StudentProp';
-
-
+import GetInputBoxValue from './GetInputBoxValue';
+import HandleForm from './HandleForm';
 
 function App() {
   
@@ -20,8 +21,11 @@ function App() {
 
   return (
     <div className="App">
+      <GetInputBoxValue />
       <StudentProp />
       <DemoClassComponent />
+      <StudentClassComponent />
+      <HandleForm />
       {/* <User />
       <Test />
       <TestDemo />
@@ -34,7 +38,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="void()"
+          href="https://www.youtube.com/watch?v=tiLWCNFzThE&list=PLwGdqUZWnOp3aROg4wypcRhZqJG3ajZWJ"
           rel="noopener noreferrer"
         >
           {/* <UserData /> */}
